@@ -1,0 +1,5 @@
+<h1><%= @tasks.title %></h1>
+<p><%= @tasks.details %></p>
+
+<%= link_to "Volver al listado", tasks_path %> ||
+<%= link_to "Eliminar Task", task_path(@tasks), method: :delete, data: {confirm: "Estas seguro de borrar"} %>
